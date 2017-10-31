@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".splash.SplashActivity">
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.runningzou.dandu.ui.FixedImageView
+                android:id="@+id/splash_img"
+                android:layout_width="480dp"
+                android:layout_height="640dp"
+                android:scaleType="centerCrop"/>
+        </ScrollView>
+
+
+        <ImageView
+            android:id="@+id/weread_logo_iv"
+            android:layout_width="45dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:src="@drawable/welcome_weread"/>
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/weread_logo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="171.0dip"
+            android:src="@drawable/weread_signature"/>
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:src="@drawable/logo_owspace"/>
+
+    </RelativeLayout>
+</layout>
